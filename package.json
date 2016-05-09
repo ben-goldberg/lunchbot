@@ -1,0 +1,15 @@
+{
+  "name": "lunchbot",
+  "version": "1.0.0",
+  "engine": "5.2.0",
+  "description": "Originate SF's lunchbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ben Goldberg",
+  "license": "ISC",
+  "dependencies": {
+    "slackbots": "0.5.1"
+  }
+}
