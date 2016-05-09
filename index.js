@@ -1,6 +1,5 @@
 var SlackBot = require('slackbots');
 
-// create a bot
 var lunchbot = new SlackBot({
     token: process.env.BOT_API_KEY,
     name: 'Lunchbot'
