@@ -20,9 +20,7 @@ var Restaurant = db.define('restaurant', {
 });
 
 Restaurant._create = function (data) {
-  return Restaurant.create(data).then( function(restaurant) {
-    return restaurant.toSlackString();
-  })
+  return Restaurant.create(data).then(restaurant => restaurant.toSlackString());
 }
 
 module.exports = Restaurant;

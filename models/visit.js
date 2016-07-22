@@ -16,17 +16,13 @@ var Visit = db.define('visit', {
               `  restaurant: ${this.restaurant().name}`].join('\n');
     },
     restaurant: function() {
-      return Restaurant.findById(this.restaurantId).then(function(restaurant) {
-        return restaurant;
-      })
+      return Restaurant.findById(this.restaurantId).then(restaurant => restaurant);
     }
   }
 })
 
 Visit._create = function (data) {
-  return Visit.create(data).then( function(visit) {
-    return visit.toSlackString();
-  })
+  return Visit.create(data).then(visit => visit.toSlackString());
 }
 
 Visit.belongsTo(Restaurant, { as: 'restaurant' })
