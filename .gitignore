@@ -34,3 +34,6 @@ node_modules
 
 # DB
 data/*
+
+# Host
+127.0.0.1
