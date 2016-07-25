@@ -10,6 +10,7 @@
   "author": "Ben Goldberg",
   "license": "ISC",
   "dependencies": {
+    "machina": "2.0.0",
     "sequelize": "3.23.6",
     "sequelize-cli": "2.4.0",
     "slackbots": "0.5.1",
